@@ -25,8 +25,9 @@ authenticate.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(authenticate, wait_on_rate_limit=True)
 
-# Extract 100 tweets from a hashtag
-# posts = api.user_timeline(screen_name="o9solutions", count=100, lang="en", tweet_mode="extended")
+# Extract 100 tweets from a hashtag: SNOWING
+# IMPORTANT UPDATE VARIABLE TO CHOOSE HASTAG
+
 posts = api.search('SNOWING', count=100, tweet_mode = "extended")
 #  Print the last 5 tweets
 print("Show the 5 recent tweets:\n")
